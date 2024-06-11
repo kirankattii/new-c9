@@ -13,6 +13,9 @@ import { Autoplay, Pagination } from "swiper/modules"
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
+import emailjs from "@emailjs/browser"
+import { toast } from "react-toastify"
+
 const container = (delay) => ({
 	hidden: { x: -100, opacity: 0 },
 	visible: {
@@ -69,6 +72,49 @@ const Home = () => {
 		setIsMuted(true) // Mute the video again when mouse leaves
 	}
 	const navigate = useNavigate()
+
+	const [firstName, setFirstname] = useState("")
+	const [lastName, setLastname] = useState("")
+	const [contactNo, setNumber] = useState("")
+	const [email, setEmail] = useState("")
+	const [message, setMessage] = useState("")
+
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		const serviceId = "service_0nyqhev"
+
+		const templateId = "template_2m4xtov"
+
+		const publicKey = "7d2Gee0mZ6yj99snv"
+
+		const templateParams = {
+			firstName: firstName,
+			lastName: lastName,
+			email: email,
+			contactNo: contactNo,
+			to_name: "C9",
+			message: message,
+		}
+
+		emailjs
+			.send(serviceId, templateId, templateParams, publicKey)
+			.then((response) => {
+				console.log("Email sent successfully!", response)
+				setFirstname("")
+				setLastname("")
+				setEmail("")
+				setNumber("")
+				setMessage("")
+			})
+		toast
+			.success("Form Submitted Successfully")
+
+			.catch((error) => {
+				console.error("Error sending email:", error)
+				toast.error("Error fetching data")
+			})
+	}
+
 	return (
 		<div>
 			<div className="home">
@@ -681,37 +727,56 @@ const Home = () => {
 					</div>
 					<div className="home-contact-inputs">
 						<form
-							action=""
+							onSubmit={handleSubmit}
 							className="home-form"
 						>
 							<div>
 								<input
 									type="text"
 									placeholder="First Name"
-								/>{" "}
+									value={firstName}
+									onChange={(e) => setFirstname(e.target.value)}
+									required
+								/>
 								<input
 									type="text"
 									placeholder="Last Name"
+									value={lastName}
+									onChange={(e) => setLastname(e.target.value)}
 								/>
 							</div>
 							<div>
 								<input
 									type="email"
 									placeholder="Email Address"
-								/>{" "}
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+									required
+								/>
 								<input
-									type="number"
+									type="tel"
 									placeholder="Contact no"
+									value={contactNo}
+									onChange={(e) => setNumber(e.target.value)}
+									required
 								/>
 							</div>
 							<textarea
 								id=""
 								rows="04"
 								placeholder="Your Message"
+								value={message}
 								// defaultValue="Some initial value"
+								onChange={(e) => setMessage(e.target.value)}
+								required
 							/>
 
-							<button className="home-submit-btn">Submit</button>
+							<button
+								className="home-submit-btn"
+								type="submit"
+							>
+								Submit
+							</button>
 						</form>
 					</div>
 				</div>

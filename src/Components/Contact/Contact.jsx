@@ -1,8 +1,55 @@
-import React from "react"
+import React, { useState } from "react"
 import "./contact.css"
 import { motion } from "framer-motion"
 import { SplitText } from "../SplitText"
+import emailjs from "@emailjs/browser"
+import { toast } from "react-toastify"
 const Contact = () => {
+	const [firstName, setFirstname] = useState("")
+	const [lastName, setLastname] = useState("")
+	const [contactNo, setNumber] = useState("")
+	const [email, setEmail] = useState("")
+	const [message, setMessage] = useState("")
+	const [company, setCompany] = useState("")
+
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		const serviceId = "service_0nyqhev"
+
+		const templateId = "template_2m4xtov"
+
+		const publicKey = "7d2Gee0mZ6yj99snv"
+
+		const templateParams = {
+			firstName: firstName,
+			lastName: lastName,
+			email: email,
+			contactNo: contactNo,
+			to_name: "C9",
+			message: message,
+			companyName: company,
+		}
+
+		emailjs
+			.send(serviceId, templateId, templateParams, publicKey)
+			.then((response) => {
+				console.log("Email sent successfully!", response)
+				setFirstname("")
+				setLastname("")
+				setEmail("")
+				setNumber("")
+				setMessage("")
+				setCompany("")
+			})
+		toast
+			.success("Form Submitted Successfully")
+
+			.catch((error) => {
+				console.error("Error sending email:", error)
+				toast.error("Error fetching data")
+			})
+	}
+
 	return (
 		<div className="contact">
 			<div className="contact-header">
@@ -129,35 +176,72 @@ const Contact = () => {
 					{/* </div> */}
 					<div className="contact-form">
 						<form
-							action=""
+							onSubmit={handleSubmit}
 							className="contact-form"
 						>
 							<div className="contact-first-last">
 								<div>
 									<label htmlFor="">First Name</label>
-									<input type="text" />
+									<input
+										type="text"
+										value={firstName}
+										onChange={(e) => setFirstname(e.target.value)}
+										required
+									/>
 								</div>
 								<div>
 									<label htmlFor="">Last Name</label>
-									<input type="text" />
+									<input
+										type="text"
+										value={lastName}
+										onChange={(e) => setLastname(e.target.value)}
+									/>
 								</div>
 							</div>
 							<div className="contact-company-name">
 								<label htmlFor="">Company Name</label>
-								<input type="text" />
+								<input
+									type="text"
+									value={company}
+									onChange={(e) => setCompany(e.target.value)}
+									required
+								/>
+							</div>
+							<div className="contact-company-email">
+								<label htmlFor="">Phone No</label>
+								<input
+									type="tel"
+									value={contactNo}
+									onChange={(e) => setNumber(e.target.value)}
+									required
+								/>
 							</div>
 							<div className="contact-company-email">
 								<label htmlFor="">Email Address</label>
-								<input type="email" />
+								<input
+									type="email"
+									value={email}
+									onChange={(e) => setEmail(e.target.value)}
+									required
+								/>
 							</div>
 							<div className="contact-company-message">
 								<label htmlFor="">Message</label>
 								<textarea
 									cols="30"
 									rows="4"
-								></textarea>
+									value={message}
+									// defaultValue="Some initial value"
+									onChange={(e) => setMessage(e.target.value)}
+									required
+								/>
 							</div>
-							<button className="contact-form-btn">Send Message</button>
+							<button
+								className="contact-form-btn"
+								type="submit"
+							>
+								Send Message
+							</button>
 						</form>
 					</div>
 				</div>
