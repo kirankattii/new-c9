@@ -671,7 +671,7 @@ const Home = () => {
 						</SwiperSlide>
 					</Swiper>
 				</div>
-				<h2 className="home-testimonal-btn">TESTIMONALS</h2>
+				{/* <h2 className="home-testimonal-btn">TESTIMONALS</h2> */}
 			</div>
 			<div className="home-contact">
 				<div className="home-contact-content">

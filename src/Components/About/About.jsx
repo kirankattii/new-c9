@@ -72,7 +72,9 @@ const About = () => {
 							empower businesses through exceptional digital marketing services.
 							As a forward-thinking agency, we blend advanced digital strategies
 							with creative solutions to ensure that every brand we touch not
-							only meets but exceeds its online potential.
+							only meets but exceeds its online potential. Trust us as your
+							business is now in professional hands as we are the best digital
+							marketing company in Australia.
 						</p>
 					</div>
 					<div
@@ -189,8 +191,8 @@ const About = () => {
 						>
 							<h3>SEO & SMO</h3>
 							<p>
-								We elevate your brand's online presence, ensuring top rankings
-								in search engine results and enhanced social media engagement
+								We optimise social media with organic traffic and rules as the
+								best social media optimization company in Australia.
 							</p>
 						</motion.div>
 					</div>
@@ -221,8 +223,9 @@ const About = () => {
 						>
 							<h3>Web Design and Development</h3>
 							<p>
-								From aesthetic design to backend development, our websites are
-								built to impress and perform.
+								the best in the field of website development and designing as we
+								are the trusted website development company in Australia and
+								professional website designing company in Perth
 							</p>
 						</motion.div>
 					</div>
@@ -284,10 +287,7 @@ const About = () => {
 							className="about-service-content"
 						>
 							<h3>Logo Designing</h3>
-							<p>
-								Our logos aren’t just designs; they are strategic brand marks
-								that encapsulate the essence of your business
-							</p>
+							<p>We are a professional logo designing company in Perth.</p>
 						</motion.div>
 					</div>
 				</div>
