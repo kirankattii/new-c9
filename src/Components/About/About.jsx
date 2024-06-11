@@ -191,8 +191,10 @@ const About = () => {
 						>
 							<h3>SEO & SMO</h3>
 							<p>
-								We optimise social media with organic traffic and rules as the
-								best social media optimization company in Australia.
+								We elevate your brand's online presence, ensuring top rankings
+								in search engine results and enhanced social media engagement We
+								optimise social media with organic traffic and rules as the best
+								social media optimization company in Australia.
 							</p>
 						</motion.div>
 					</div>
@@ -223,9 +225,11 @@ const About = () => {
 						>
 							<h3>Web Design and Development</h3>
 							<p>
-								the best in the field of website development and designing as we
-								are the trusted website development company in Australia and
-								professional website designing company in Perth
+								From aesthetic design to backend development, our websites are
+								built to impress and perform. the best in the field of website
+								development and designing as we are the trusted website
+								development company in Australia and professional website
+								designing company in Perth
 							</p>
 						</motion.div>
 					</div>
@@ -257,7 +261,8 @@ const About = () => {
 							<h3>Product Packaging Design</h3>
 							<p>
 								We create visually appealing packaging that resonates with
-								consumers and amplifies brand identity.
+								consumers and amplifies brand identity. We are a professional
+								logo designing company in Perth.
 							</p>
 						</motion.div>
 					</div>
@@ -287,7 +292,10 @@ const About = () => {
 							className="about-service-content"
 						>
 							<h3>Logo Designing</h3>
-							<p>We are a professional logo designing company in Perth.</p>
+							<p>
+								Our logos aren’t just designs; they are strategic brand marks
+								that encapsulate the essence of your business
+							</p>
 						</motion.div>
 					</div>
 				</div>

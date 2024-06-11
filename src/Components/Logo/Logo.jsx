@@ -87,12 +87,17 @@ const Logo = () => {
 							story, values, and professionalism silently but effectively. Our
 							Unique Approach to Logo Design
 						</li>
-						<li>
-							<b>At C9 Ads, we don’t just create logos:</b> we create icons of
-							brand identity. Our immersive logo design process involves
-							understanding your business's heart and soul:
-						</li>
+						<p></p>
 					</motion.ul>
+					<motion.p
+						whileInView={{ scale: 1, opacity: 1, x: 0 }}
+						initial={{ scale: 0.94, opacity: 0, x: -50 }}
+						transition={{ duration: 0.5 }}
+					>
+						At C9 Ads, we don’t just create logos: we create icons of brand
+						identity. Our immersive logo design process involves understanding
+						your business's heart and soul:
+					</motion.p>
 				</div>
 				<div className="logo-vault">
 					<h1>Logo Vault</h1>
