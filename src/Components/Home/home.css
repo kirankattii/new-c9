@@ -1619,6 +1619,7 @@
   width: 100px;
   padding-top: 150px;
   z-index: 2;
+
   position: absolute;
   /* letter-spacing: 15px; */
   /* margin-right: 20px; */
@@ -1687,6 +1688,8 @@
 
 .whatsets-milestone div span {
   font-size: 75px;
+  z-index: 5;
+  margin-left: 3px;
   /* letter-spacing: 05px; */
 
 }
@@ -1702,7 +1705,12 @@
   margin-left: 40px;
 }
 
-.whatsets-orangebg p {
+.whatsets-milestone p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.awards-description {
   font-size: 18px;
   text-align: justify;
 }

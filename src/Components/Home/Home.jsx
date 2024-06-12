@@ -439,7 +439,7 @@ const Home = () => {
 												)}
 												+
 											</span>
-											<p>Project Completed</p>
+											<p>Award Winning Campaigns</p>
 										</div>
 										<div>
 											<span>
@@ -452,10 +452,10 @@ const Home = () => {
 												)}
 												+
 											</span>
-											<p>Project Completed</p>
+											<p>Long Term Partnerships</p>
 										</div>
 									</div>
-									<p>
+									<p className="awards-description">
 										Our comprehensive services enable the seamless creation of
 										digital products while offering objective problem-solving
 										through strategic planning, advanced technology integration,
