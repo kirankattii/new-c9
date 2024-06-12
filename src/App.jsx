@@ -72,6 +72,7 @@ const App = () => {
 		"/values",
 		"/blogs",
 		"/animate",
+		,
 	]
 
 	const isNotFound = !validPaths.includes(location.pathname)
@@ -79,7 +80,7 @@ const App = () => {
 		<div>
 			<ToastContainer />
 			<ScrollToTop />
-			{!isNotFound && <Navbar />}
+			<Navbar />
 			<Routes>
 				<Route
 					index
@@ -161,7 +162,7 @@ const App = () => {
 			<Whatsapp />
 
 			{/* {!isStoryPage && <Footer />} */}
-			{!isAboutPage && <Footer />}
+			{!isNotFound && !isAboutPage && <Footer />}
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-/* src/NotFoundPage.css */
+/* 
 .not-found-container {
   text-align: center;
   background-color: #EF4523;
@@ -55,4 +55,65 @@
 
 .social-icons a:hover {
   color: #c0392b;
+} */
+
+
+
+
+
+
+
+
+
+/* src/Error404.css */
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212;
+  color: white;
+  text-align: center;
+  font-family: 'AfterglowRegular';
+
+}
+
+.error-content {
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.error-image {
+  max-width: 60%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.error-page h1 {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.error-page p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.home-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #EF4523;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background-color: #f0f0f0;
 }
