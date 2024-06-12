@@ -7,7 +7,9 @@ import Footer from "./Components/Footer/Footer"
 import "locomotive-scroll/dist/locomotive-scroll.css"
 import Contact from "./Components/Contact/Contact"
 import Services from "./Components/Services/Services"
-import { logPageView } from "./utils/analytics"
+import { initGA, logPageView } from "./utils/analytics"
+import { getUserData } from "./utils/users"
+
 // import LogoWork from "./Components/LogoWork/LogoWork"
 // import Packaging from "./Components/Packaging/Packaging"
 import Values from "./Components/Values/Values"
@@ -43,6 +45,11 @@ const App = () => {
 	// const isPackagingPage = location.pathname === "/packaging"
 	const isAboutPage = location.pathname === "/about-us"
 	// const isNotFound = location.pathname === "*"
+
+	useEffect(() => {
+		initGA() // Initialize Google Analytics
+		const users = getUserData() // Fetch user data
+	}, [])
 
 	useEffect(() => {
 		logPageView()

@@ -39,7 +39,7 @@ const Footer = () => {
 						<h2>Quick Links</h2>
 						<ul>
 							{quickLinks.map((item) => (
-								<div>
+								<div key={item.name}>
 									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
 
 									<li key={item.id}>
@@ -53,7 +53,7 @@ const Footer = () => {
 						<h2>Work</h2>
 						<ul>
 							{work.map((item) => (
-								<div>
+								<div key={item.name}>
 									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
 									<li key={item.id}>{item.name}</li>
 								</div>
@@ -64,7 +64,7 @@ const Footer = () => {
 						<h2>Questionnaire</h2>
 						<ul>
 							{questionnarie.map((item) => (
-								<div>
+								<div key={item.name}>
 									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
 									<li key={item.id}>{item.name}</li>
 								</div>
