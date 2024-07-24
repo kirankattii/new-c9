@@ -243,7 +243,6 @@ const Contact = () => {
 										cols="30"
 										rows="4"
 										value={message}
-										// defaultValue="Some initial value"
 										onChange={(e) => setMessage(e.target.value)}
 										required
 									/>

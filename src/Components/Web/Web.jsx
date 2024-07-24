@@ -119,8 +119,8 @@ const Web = () => {
 						</div>
 						<p className="web-text-content">
 							In today's digital age, your website is often the first impression
-							potential customers have of your business. At Pitamaas, we excel
-							in creating high-performance, visually stunning websites that not
+							potential customers have of your business. At C9, we excel in
+							creating high-performance, visually stunning websites that not
 							only capture your brand's essence but also deliver tangible
 							results. Our team of experienced web developers and designers
 							collaborate to provide tailored web solutions that meet your

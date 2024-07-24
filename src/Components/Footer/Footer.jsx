@@ -30,7 +30,7 @@ const Footer = () => {
 								src={assets.email_logo}
 								alt=""
 							/>
-							<p>business@c9ads.com</p>
+							<p>akshtam@c9ads.com</p>
 						</li>
 					</ul>
 				</div>
@@ -55,18 +55,9 @@ const Footer = () => {
 							{work.map((item) => (
 								<div key={item.name}>
 									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
-									<li key={item.id}>{item.name}</li>
-								</div>
-							))}
-						</ul>
-					</div>
-					<div>
-						<h2>Questionnaire</h2>
-						<ul>
-							{questionnarie.map((item) => (
-								<div key={item.name}>
-									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
-									<li key={item.id}>{item.name}</li>
+									<li key={item.id}>
+										<Link to={item.link}>{item.name}</Link>
+									</li>
 								</div>
 							))}
 						</ul>

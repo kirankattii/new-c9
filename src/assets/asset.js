@@ -362,47 +362,46 @@ export const quickLinks = [
 	},
 	{
 		id: 3,
-		name: "Work",
-		link: "#",
+		name: "services",
+		link: "/services",
 	},
 	{
 		id: 4,
-		name: "Career",
-		link: "#",
-	},
-	{
-		id: 5,
-		name: "Get Our Profile",
-		link: "#",
-	},
-	{
-		id: 6,
 		name: "Blogs",
 		link: "/blogs",
 	},
 	{
-		id: 7,
-		name: "Reach",
-		link: "#",
+		id: 5,
+		name: "Contact Us",
+		link: "/contact",
 	},
 ]
 
 export const work = [
 	{
 		id: 1,
-		name: "All",
+		name: "Social Media Marketing",
+		link: "/social-media-marketing",
 	},
 	{
 		id: 2,
-		name: "Packaging",
+		name: "Web Development",
+		link: "/web-development",
 	},
 	{
 		id: 3,
-		name: "Logos",
+		name: "Logos Designing",
+		link: "/logo",
 	},
 	{
 		id: 4,
-		name: "Digital Marketing",
+		name: "Packaging Design",
+		link: "/packaging2",
+	},
+	{
+		id: 4,
+		name: "SEO",
+		link: "/seo",
 	},
 ]
 

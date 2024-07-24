@@ -127,9 +127,12 @@
 
 .service-tags span {
   font-weight: 300;
-  color: #EF4523;
+  color: #fff;
 }
 
+.service-tags span:hover {
+  color: #EF4523;
+}
 
 .wave-animation {
   animation: wave 1s ease infinite alternate;

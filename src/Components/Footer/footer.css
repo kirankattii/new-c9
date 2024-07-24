@@ -9,7 +9,7 @@
 .footer-container {
   display: flex;
   align-items: start;
-  padding: 20px 150px;
+  padding: 0px 100px;
   gap: 100px;
 
   justify-content: space-between;
@@ -135,8 +135,10 @@
   }
 
   .right-footer {
+    width: 100%;
     display: flex;
     gap: 20px;
+    justify-content: space-between;
   }
 
 }
