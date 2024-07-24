@@ -948,6 +948,7 @@
     top: 120px;
     opacity: 0.6;
     height: 650px;
+    display: none;
   }
 
   .right-ourdesign p {
