@@ -517,13 +517,14 @@ const Home = () => {
 										alt="Features"
 									/>
 									<div>
-										<h3>Maximizing Social Media ROI for Small Businesses</h3>
+										<h3>
+											SEO Strategies That Work in a Voice Search Dominated Era
+										</h3>
 										<p>
-											In this blog post, discuss how small businesses can
-											leverage social media platforms effectively to maximize
-											their return on investment (ROI). Include tips on
-											identifying the right social media
-											channels....................
+											Email marketing remains a powerful tool for nurturing
+											leads and driving conversions. Share best practices for
+											crafting compelling subject lines, designing
+											mobile-responsive email templates……
 										</p>
 									</div>
 								</motion.div>
@@ -536,13 +537,11 @@ const Home = () => {
 									className="home-feature2"
 								>
 									<div>
-										<h3>Maximizing Social Media ROI for Small Businesses</h3>
+										<h3>The Power of Influencer Marketing in 2024</h3>
 										<p>
-											In this blog post, discuss how small businesses can
-											leverage social media platforms effectively to maximize
-											their return on investment (ROI). Include tips on
-											identifying the right social media
-											channels....................
+											Explore the evolving landscape of influencer marketing in
+											2024. Discuss the impact of micro-influencers, emerging
+											platforms, and changing consumer behavior on influencer……
 										</p>
 									</div>{" "}
 									<img
@@ -557,13 +556,14 @@ const Home = () => {
 									className="home-feature2 home-feature4"
 								>
 									<div>
-										<h3>Maximizing Social Media ROI for Small Businesses</h3>
+										<h3>
+											Email Marketing Best Practices for Conversion Optimization
+										</h3>
 										<p>
-											In this blog post, discuss how small businesses can
-											leverage social media platforms effectively to maximize
-											their return on investment (ROI). Include tips on
-											identifying the right social media
-											channels....................
+											With the rise of voice search technology, SEO strategies
+											need to adapt. This blog can delve into the importance of
+											optimizing for voice search, understanding user intent,
+											using long-tail……
 										</p>
 									</div>
 									<img

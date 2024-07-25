@@ -147,7 +147,7 @@ const HomeSlides = () => {
 									handleClick()
 								}}
 							>
-								Click Here
+								{/* Click Here */}
 							</h2>
 							<h1>{item.title}</h1>
 							<div className="slide-border"></div>
