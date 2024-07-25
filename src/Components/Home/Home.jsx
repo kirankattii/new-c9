@@ -521,10 +521,10 @@ const Home = () => {
 											SEO Strategies That Work in a Voice Search Dominated Era
 										</h3>
 										<p>
-											Email marketing remains a powerful tool for nurturing
-											leads and driving conversions. Share best practices for
-											crafting compelling subject lines, designing
-											mobile-responsive email templates……
+											With the rise of voice search technology, SEO strategies
+											need to adapt. This blog can delve into the importance of
+											optimizing for voice search, understanding user intent,
+											using long-tail……
 										</p>
 									</div>
 								</motion.div>
@@ -560,10 +560,10 @@ const Home = () => {
 											Email Marketing Best Practices for Conversion Optimization
 										</h3>
 										<p>
-											With the rise of voice search technology, SEO strategies
-											need to adapt. This blog can delve into the importance of
-											optimizing for voice search, understanding user intent,
-											using long-tail……
+											Email marketing remains a powerful tool for nurturing
+											leads and driving conversions. Share best practices for
+											crafting compelling subject lines, designing
+											mobile-responsive email templates……
 										</p>
 									</div>
 									<img
