@@ -30,7 +30,7 @@ const Footer = () => {
 								src={assets.email_logo}
 								alt=""
 							/>
-							<p>akshtam@c9ads.com</p>
+							<p>business@c9ads.au</p>
 						</li>
 					</ul>
 				</div>

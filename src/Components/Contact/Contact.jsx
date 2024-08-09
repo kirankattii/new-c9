@@ -176,7 +176,7 @@ const Contact = () => {
 									</div>
 									<div>
 										<h3>Chat To Us</h3>
-										<p>akshtam@c9ads.au</p>
+										<p>business@c9ads.au</p>
 									</div>
 									<div>
 										<h3>Contact To Us</h3>
