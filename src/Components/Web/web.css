@@ -454,6 +454,12 @@
   margin-top: 0px;
 }
 
+.marqueText2 {
+
+  font-size: 150px;
+  color: #fff;
+}
+
 @media(max-width:1200px) {
   .main-content-video2.moved-down {
     top: 72%;
@@ -702,6 +708,12 @@
 
   .main-content-video1.content2-reached {
     top: 44%;
+  }
+
+  .marqueText2 {
+
+    font-size: 80px;
+    color: #fff;
   }
 
 }

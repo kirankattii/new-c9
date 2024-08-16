@@ -8,16 +8,18 @@ const NavHover = () => {
 	const navigate = useNavigate()
 	return (
 		<div className="navhover">
-			<motion.div
-				whileHover={{ scale: 0.85 }}
-				onClick={() => navigate("/social-media-marketing")}
-			>
-				<img
-					src={assets.aboutService1}
-					alt="SOCIAL MEDIA MARKETING"
-				/>
-				<p>SOCIAL MEDIA MARKETING</p>
-			</motion.div>
+			<a href="/social-media-marketing">
+				<motion.div
+					whileHover={{ scale: 0.85 }}
+					// onClick={() => navigate("/social-media-marketing")}
+				>
+					<img
+						src={assets.aboutService1}
+						alt="SOCIAL MEDIA MARKETING"
+					/>
+					<p>SOCIAL MEDIA MARKETING</p>
+				</motion.div>
+			</a>
 			<motion.div
 				whileHover={{ scale: 0.85 }}
 				onClick={() => navigate("/web-development")}

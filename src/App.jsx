@@ -31,6 +31,7 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { useEffect } from "react"
+import SocialMedia2 from "./Components/SocialMedia/SocialMedia2"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -140,7 +141,7 @@ const App = () => {
 				/>
 				<Route
 					path="/social-media-marketing"
-					element={<SocialMedia />}
+					element={<SocialMedia2 />}
 				/>
 				<Route
 					path="/web-development"

@@ -82,16 +82,32 @@
 	align-items: center; /* Center the text vertically */
 }
 
-.scrollingText {
+.scrollingText1 {
+	width: 100%;
 	display: flex;
 	white-space: nowrap;
 	animation: scroll 10s linear infinite; /* Adjust the duration as needed */
 	font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
-.scrollingText h1 {
+.scrollingText1 h1 {
 	display: inline-block;
-	padding-right: 100%; /* Adjust to ensure the seamless effect */
+	// padding-right: 100%; /* Adjust to ensure the seamless effect */
+	font-size: 150px;
+	color: #fff;
+}
+.content {
+	display: flex;
+	height: 50vh;
+	color: #fff;
+	letter-spacing: 1.4px;
+	line-height: 1.2;
+	font-size: 24px;
+}
+.content p {
+	max-width: 800px;
+	text-align: center;
+	margin: auto;
 }
 
 @keyframes scroll {
@@ -118,5 +134,9 @@
 		text-align: center;
 		font-family: "MadeTommyMedium";
 		letter-spacing: 5px;
+	}
+	.content p {
+		padding: 10px;
+		font-size: 18px;
 	}
 }

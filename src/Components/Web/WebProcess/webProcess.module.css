@@ -1,0 +1,233 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'MadeTommySoft';
+  background: #000;
+  color: #fff;
+
+}
+
+.webProcess {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 80px 20px;
+  gap: 50px;
+}
+
+.topWebprocess h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.topWebprocess {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topWebprocess div {
+  display: flex;
+  align-items: center;
+}
+
+.bottomWebprocess {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.allList {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.process {
+  display: flex;
+  align-items: start;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list h2 {
+  font-size: 18px;
+  background: orangered;
+  padding: 15px;
+  text-align: center;
+  border-radius: 50px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 5%, rgba(239, 69, 35, 1) 100%);
+  width: 100%;
+}
+
+.list p {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+
+.list div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: orangered;
+}
+
+.list div hr {
+  height: 50px;
+  background: orangered;
+  outline: 0;
+  border: 1px solid orangered;
+
+}
+
+.list div span {
+  margin-top: -140px;
+  font-size: 150px;
+}
+
+
+.outerhr {
+  /* width: 200px; */
+  width: 40%;
+  margin-top: 25px;
+  border: 1px solid orangered;
+
+}
+
+.bottomWebprocess img {
+  width: 350px;
+  height: 80vh;
+
+}
+
+/* ====================service========== */
+.service {
+  background: #1e1e1e;
+  padding: 50px;
+}
+
+.service h1 {
+  font-family: 'AllerDisplay';
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.serviceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 40px;
+  max-width: 1100px;
+
+}
+
+.serviceContent p {
+  font-size: 18px;
+  letter-spacing: 1.3px;
+  line-height: 1.4;
+}
+
+.serviceContent p span {
+  font-weight: bold;
+  font-size: 21px;
+  padding-bottom: 5px;
+}
+
+@media(max-width:1200px) {
+  .bottomWebprocess img {
+    width: 300px;
+    height: 70vh;
+
+  }
+}
+
+@media(max-width:1000px) {
+  .bottomWebprocess {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  .bottomWebprocess img {
+    width: 400px;
+    height: 70vh;
+
+  }
+
+  .service {
+    background: #1e1e1e;
+    padding: 30px;
+  }
+
+  .serviceContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    max-width: 1100px;
+
+  }
+
+  .serviceContent p {
+    font-size: 16px;
+    letter-spacing: 1.3px;
+    line-height: 1.4;
+  }
+
+  .serviceContent p span {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 5px;
+  }
+}
+
+@media(max-width:600px) {
+  .process {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .outerhr {
+    display: none;
+  }
+
+  .list p {
+    margin-top: -20px;
+  }
+
+  .topWebprocess h1 {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .service {
+    background: #1e1e1e;
+    padding: 30px 15px;
+  }
+
+
+  .service h1 {
+    font-family: 'AllerDisplay';
+    font-size: 32px;
+    font-weight: 300;
+  }
+
+  .serviceContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1100px;
+
+  }
+
+}

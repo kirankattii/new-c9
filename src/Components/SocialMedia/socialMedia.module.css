@@ -1,0 +1,163 @@
+.Allcontainer {
+  background: #1e1e1e;
+  color: #fff;
+  font-family: 'MadeTommySoft';
+}
+
+.header {
+  margin-top: 50px;
+  /* min-height: 100vh; */
+
+}
+
+.header img {
+  width: 100%;
+}
+
+.header p {
+  font-family: 'MadeTommySoft';
+  font-size: 17px;
+  padding: 40px 50px;
+  text-align: justify;
+}
+
+
+.scrollsectionouter {
+  overflow: hidden;
+}
+
+.scrollsectioninner {
+  min-height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scrollsection {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.scrollsection p {
+  max-width: 400px;
+  text-align: center;
+}
+
+.scrollsection h3 {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+}
+
+.scrollsection2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.digitalMarketing2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 100px;
+  display: none;
+}
+
+.scrollsection2 .videoContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.scrollsection2 .videoContent p {
+  text-align: center;
+}
+
+.scrollsection2 p {
+  max-width: 400px;
+
+}
+
+.digitalMarketing {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.degitalMarketingProcesses {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.degitalMarketingProcesses div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.marketingGif {
+  max-width: 800px;
+}
+
+
+@media(max-width:850px) {
+  .scrollsection {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media(max-width:700px) {
+  .marketingGif {
+    /* width: 200px; */
+    height: 350px;
+    /* padding: 20px; */
+    margin-left: 50px;
+    margin-bottom: 70px;
+  }
+
+  .scrollsection {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .scrollsectioninner {
+    min-height: 100vh;
+    margin-top: 30px;
+    width: 500vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+}
+
+@media(max-width:500px) {
+  .digitalMarketing {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 350px;
+  }
+
+}

@@ -4,6 +4,7 @@ import { assets } from "../../assets/asset"
 import { motion } from "framer-motion"
 import LogoParallax from "./LogoParallax/LogoParallax"
 import { Helmet } from "react-helmet"
+import LogoParallax2 from "./LogoParallax2/LogoParallax2"
 
 const Logo = () => {
 	return (
@@ -113,7 +114,8 @@ const Logo = () => {
 					<div className="logo-vault">
 						<h1>Logo Vault</h1>
 					</div>
-					<LogoParallax />
+					<LogoParallax2 />
+					{/* <LogoParallax2 /> */}
 					<div className="logo-subContaine3">
 						<div>
 							<motion.h2

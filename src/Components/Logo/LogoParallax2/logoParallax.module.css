@@ -1,0 +1,44 @@
+.scrollSectionOuter {
+  overflow: hidden;
+  height: 50vh;
+  margin: 50px 0;
+}
+
+.scrollSectionInner {
+  height: 30vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scrollSection1 {
+  height: 30vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollSection1 img {
+  color: var(--primaryTextColor);
+  letter-spacing: var(--headlineMedium);
+  font-size: var(--headlineMedium);
+  text-transform: uppercase;
+  margin-top: 200px;
+}
+
+
+.logosImg {
+  display: flex;
+}
+
+.imgContainer {
+  display: flex;
+  margin-left: -20%;
+}
+
+.imgContainer2 {
+  display: flex;
+  margin-left: -300%;
+}

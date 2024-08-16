@@ -4,6 +4,7 @@ import { assets } from "../../../assets/asset"
 
 import Lenis from "@studio-freight/lenis"
 import { useTransform, useScroll, motion } from "framer-motion"
+import Marquee from "react-fast-marquee"
 
 const images = [
 	assets.webpage1,
@@ -83,12 +84,19 @@ export default function Home() {
 					y={y5}
 				/>
 			</div>
-			<div className={styles.spacer2}>
-				<div className={styles.scrollingText}>
-					<h1>Begin Your Digital Transformation Today</h1>
-					<h1>Begin Your Digital Transformation Today</h1>
-				</div>
+
+			<div className={styles.content}>
+				<p>
+					In today's digital age, your website is often the first impression
+					potential customers have of your business. At C9 Ads, we excel in
+					creating high-performance, visually stunning websites that not only
+					capture your brand's essence but also deliver tangible results. Our
+					team of experienced web developers and designers collaborate to
+					provide tailored web solutions that meet your unique business
+					requirements.
+				</p>
 			</div>
+			<div className={styles.scrollingText1}></div>
 		</main>
 	)
 }

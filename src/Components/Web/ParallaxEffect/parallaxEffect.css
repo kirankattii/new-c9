@@ -37,3 +37,8 @@
 .spacer {
   height: 100vh;
 }
+
+.marqueeHeading {
+  width: 100%;
+  font-size: 250px;
+}

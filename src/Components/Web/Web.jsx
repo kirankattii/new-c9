@@ -4,6 +4,8 @@ import { assets } from "../../assets/asset"
 import { motion } from "framer-motion"
 import ParallaxEffect from "./ParallaxEffect/ParallaxEffect"
 import { Helmet } from "react-helmet"
+import WebProcess from "./WebProcess/WebProcess"
+import Marquee from "react-fast-marquee"
 const Web = () => {
 	const videoRef = useRef(null)
 	const [isScrolled, setIsScrolled] = useState(false)
@@ -98,7 +100,7 @@ const Web = () => {
 						<h3>Building Digital Experiences, One Pixel at a Time.</h3>
 						<p>Elevate Your Digital Impact</p>
 					</motion.div>
-					<div className="web-content-video">
+					{/* <div className="web-content-video">
 						<div
 							className={`web-v1 ${isScrolled ? "scrolled" : ""}`}
 							ref={videoRef}
@@ -504,15 +506,24 @@ const Web = () => {
 								</div>
 							</div>
 						</div>
+					</div> */}
+					<div>
+						<WebProcess />
 					</div>
 
-					{/* <div className="parallaxweb-ourwork"> */}
-
-					{/* </div> */}
-					{/* <ParallaxEff */}
 					<div className="web-parallax">
 						<ParallaxEffect />
 					</div>
+					<Marquee>
+						<h1
+							// style={{ fontSize: "150px", color:"" }}
+							className="marqueText2"
+						>
+							{" "}
+							Begin Your Digital Transformation Today Begin Your Digital
+							Transformation Today{" "}
+						</h1>
+					</Marquee>
 				</div>
 			</div>
 		</>

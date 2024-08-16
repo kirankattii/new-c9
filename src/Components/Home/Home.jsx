@@ -16,6 +16,8 @@ import "swiper/css/navigation"
 import emailjs from "@emailjs/browser"
 import { toast } from "react-toastify"
 import { Helmet } from "react-helmet"
+import InquiryForm from "../PopupHome/InquiryForm"
+import Marquee from "react-fast-marquee"
 
 const container = (delay) => ({
 	hidden: { x: -100, opacity: 0 },
@@ -116,6 +118,20 @@ const Home = () => {
 			})
 	}
 
+	const [isFormVisible, setIsFormVisible] = useState(false)
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setIsFormVisible(true)
+		}, 4000) // Show the form after 3 seconds
+
+		return () => clearTimeout(timer) // Cleanup the timer on component unmount
+	}, [])
+
+	const handleClose = () => {
+		setIsFormVisible(false)
+	}
+
 	return (
 		<>
 			<Helmet>
@@ -127,12 +143,19 @@ const Home = () => {
 					content="The most trusted digital marketing agency in Australia and offers logo designing, SEO, SMO, SMM, web designing, web development, and product packaging services."
 				/>
 			</Helmet>
-			<div>
+			<div className="homePageContainer">
+				<div className="homeMarquee">
+					<Marquee>marketing & design</Marquee>
+				</div>{" "}
+				<div className="homeMarquee2">
+					<Marquee direction="right">marketing & design</Marquee>
+				</div>
 				<div className="home">
 					<div className="home-content">
 						{/* <div className={`home-text ${waveAnimation ? "wave-animation" : ""}`}> */}
+
 						<div className="home-text">
-							<motion.h1
+							{/* <motion.h1
 								variants={container(0)}
 								initial="hidden"
 								animate="visible"
@@ -148,7 +171,11 @@ const Home = () => {
 							>
 								<span>OUR</span>
 								<h1>artistry</h1>
-							</motion.div>
+							</motion.div> */}
+
+							<h1 className="homeText1">A CREATIVE</h1>
+							<h1 className="homeText2">MARKETING & DESIGN</h1>
+							<h1 className="homeText3">COMPANY</h1>
 						</div>
 						<motion.img
 							initial={{ opacity: 0 }}
@@ -801,6 +828,10 @@ const Home = () => {
 						</div>
 					</div>
 				</div>
+				<InquiryForm
+					isVisible={isFormVisible}
+					onClose={handleClose}
+				/>
 			</div>
 		</>
 	)

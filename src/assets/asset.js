@@ -147,6 +147,8 @@ import blogProfile1 from "./blogprofile1.png"
 import blogProfile2 from "./blogprofile2.png"
 import blogProfile3 from "./blogprofile3.png"
 import blogProfile4 from "./blogprofile4.png"
+import webAiImg from "./webAi img.png"
+import socialMediaGif from "./socialmediagif.gif"
 
 export const assets = {
 	c9logo,
@@ -285,6 +287,8 @@ export const assets = {
 	blogProfile2,
 	blogProfile3,
 	blogProfile4,
+	webAiImg,
+	socialMediaGif,
 }
 
 export const homeCorosal = [
