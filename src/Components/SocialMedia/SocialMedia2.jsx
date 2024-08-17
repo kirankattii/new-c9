@@ -118,8 +118,8 @@ const SocialMedia2 = () => {
 							</div>
 							<div className={styles.scrollsection}>
 								<video
-									width="330"
-									height="360"
+									// width="330"
+									// height="360"
 									controls
 								>
 									<source
@@ -136,8 +136,8 @@ const SocialMedia2 = () => {
 							</div>
 							<div className={styles.scrollsection}>
 								<video
-									width="330"
-									height="360"
+									// width="330"
+									// height="360"
 									controls
 								>
 									<source
@@ -155,8 +155,8 @@ const SocialMedia2 = () => {
 							<div className={styles.scrollsection2}>
 								<div className={styles.videoContent}>
 									<video
-										width="330"
-										height="360"
+										// width="330"
+										// height="360"
 										controls
 									>
 										<source

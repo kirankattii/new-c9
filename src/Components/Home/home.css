@@ -561,7 +561,7 @@
   }
 
   .home-text {
-    margin-top: 20px;
+    margin-top: 34px;
     margin-left: 9px;
   }
 
@@ -576,6 +576,7 @@
 
   .homepage-img {
     margin-top: 80px;
+    display: none;
   }
 
   .homeMarquee2 {
@@ -600,9 +601,7 @@
     font-size: 60px;
   }
 
-  .homepage-img {
-    margin-top: 80px;
-  }
+
 }
 
 
