@@ -105,26 +105,41 @@ const Navbar = () => {
 						{mediaWorkNavOpen && (
 							<div className="media-dropdown">
 								<Link
-									// onClick={() => setMobileMenu(false)}
+									onClick={() => setMobileMenu(false)}
 									to="/logo"
 								>
-									LOGO
+									Social Media Marketing
 								</Link>
 								<hr />
 								<Link
-									// onClick={() => setMobileMenu(false)}
+									onClick={() => setMobileMenu(false)}
 									to="/packaging2"
 								>
-									PACKAGING
+									Web Development
 									<hr />
 								</Link>
-								<Link to="/seo">SEO</Link>
+								<Link
+									onClick={() => setMobileMenu(false)}
+									to="/seo"
+								>
+									SEO
+								</Link>
 								<hr />
 
-								<Link to="/web-development">Web Development</Link>
+								<Link
+									onClick={() => setMobileMenu(false)}
+									to="/web-development"
+								>
+									Logo Designing
+								</Link>
 								<hr />
 
-								<Link to="/social-media-marketing">Social Media Marketing</Link>
+								<Link
+									onClick={() => setMobileMenu(false)}
+									to="/social-media-marketing"
+								>
+									Packaging Designing
+								</Link>
 								<hr />
 							</div>
 						)}

@@ -26,7 +26,7 @@ export default function Home() {
 	const { height } = dimension
 	const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
 	const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 4.3])
-	const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
+	const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 2])
 	const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 5])
 	const y5 = useTransform(scrollYProgress, [0, 1], [0, height * 1.5])
 
@@ -68,11 +68,11 @@ export default function Home() {
 					y={y}
 				/>
 				<Column
-					images={[images[1]]}
+					images={[images[2]]}
 					y={y2}
 				/>
 				<Column
-					images={[images[2]]}
+					images={[images[1]]}
 					y={y3}
 				/>
 				<Column

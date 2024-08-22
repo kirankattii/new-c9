@@ -1,0 +1,134 @@
+.container{
+  background: #1e1e1e;
+  color: #fff;
+  font-family: 'AllerDisplay';
+  font-family: 'MadeTommyLight';
+  padding-bottom: 80px;
+}
+.header img
+{
+  width: 100%;
+}
+.content{
+  display: flex;flex-direction: column;
+  width: 94%;
+  margin: auto;
+  padding: 34px 0;
+}
+.content p{
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1.1px;
+  margin-top: 26px;
+}
+.socialMediaPower h1{
+  font-size: 50px;
+  line-height: 1.2;
+  font-family: 'AllerDisplay';
+font-weight: 300;
+letter-spacing: 1.3px;
+max-width: 950px;
+}
+.essential h2{
+font-size: 36px;
+font-weight: 300;
+  font-family: 'AllerDisplay';
+  margin-top: 30px;
+  letter-spacing: 1.3px;
+
+}
+.essential span{
+  color: #EF4523;
+}
+
+.chooseC9{
+  width: 94%;
+  margin: auto;
+  display: flex;flex-direction: column;align-items: center;
+  margin-top: 40px;
+}
+.chooseC9 h2{
+  font-size: 36px;
+  margin-top: 40px;
+    font-family: 'AllerDisplay';
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
+.c9help2{
+ width: 90%;
+  margin: auto;
+  display: flex;flex-direction: column;align-items: center;
+  margin-top: 30px;
+}
+.c9help2 span{
+  color: #EF4523;
+}
+
+.contactButton{
+  max-width:500px ;
+  display: flex;align-items: center;justify-content: center;
+  margin: auto;
+  padding: 10px 40px;
+  width: 100%;
+  border-radius: 10px;
+  background: #EF4523;
+  color: #fff;
+  font-size: 32px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+ 
+}
+
+@media(max-width:750px){
+  .header img{
+  width: 100%;
+margin-top: 12vh;
+}
+.socialMediaPower h1{
+  font-size: 34px;
+  line-height: 1.2;
+
+}
+.content p{
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1.1px;
+  margin-top: 26px;
+}
+}
+@media(max-width:600px){
+  .chooseC9{
+  width: 100%;
+  margin: auto;
+  display: flex;flex-direction: column;align-items: center;
+  margin-top: 40px;
+}
+.chooseC9 h2{
+  font-size: 28px;
+  margin-top: 40px;
+    font-family: 'AllerDisplay';
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+
+.c9help2{
+ width: 95%;
+  margin: auto;
+  display: flex;flex-direction: column;align-items: center;
+  margin-top: 30px;
+}
+.essential h2{
+font-size: 26;
+font-weight: 300;
+  font-family: 'AllerDisplay';
+  margin-top: 30px;
+  letter-spacing: 1.3px;
+
+}
+.contactButton{
+  width: 70%;
+}
+
+}

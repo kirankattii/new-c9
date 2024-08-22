@@ -13,12 +13,64 @@ const InquiryForm = ({ isVisible, onClose }) => {
 	const [message, setMessage] = useState("")
 	const [company, setCompany] = useState("")
 
+	const isValidPhoneNumber = (phoneNumber) => {
+		const phoneRegex = /^[0-9]{10}$/ // Adjust the regex based on your phone number format requirements
+		return phoneRegex.test(phoneNumber)
+	}
+
+	// const handleSubmit = (e) => {
+	// 	e.preventDefault()
+
+	// 	if (!isValidPhoneNumber(contactNo)) {
+	// 		toast.error("Please enter a valid phone number.")
+	// 		return
+	// 	}
+	// 	const serviceId = "service_0nyqhev"
+
+	// 	const templateId = "template_2m4xtov"
+
+	// 	const publicKey = "7d2Gee0mZ6yj99snv"
+
+	// 	const templateParams = {
+	// 		firstName: firstName,
+	// 		lastName: lastName,
+	// 		email: email,
+	// 		contactNo: contactNo,
+	// 		to_name: "C9",
+	// 		message: message,
+	// 		companyName: company,
+	// 	}
+
+	// 	emailjs
+	// 		.send(serviceId, templateId, templateParams, publicKey)
+	// 		.then((response) => {
+	// 			console.log("Email sent successfully!", response)
+	// 			setFirstname("")
+	// 			setLastname("")
+	// 			setEmail("")
+	// 			setNumber("")
+	// 			setMessage("")
+	// 			setCompany("")
+	// 		})
+	// 	toast
+	// 		.success("Form Submitted Successfully")
+
+	// 		.catch((error) => {
+	// 			console.error("Error sending email:", error)
+	// 			toast.error("Error fetching data")
+	// 		})
+	// }
+
 	const handleSubmit = (e) => {
 		e.preventDefault()
+
+		if (!isValidPhoneNumber(contactNo)) {
+			toast.error("Please enter a valid phone number.", { autoClose: 2000 })
+			return
+		}
+
 		const serviceId = "service_0nyqhev"
-
 		const templateId = "template_2m4xtov"
-
 		const publicKey = "7d2Gee0mZ6yj99snv"
 
 		const templateParams = {
@@ -41,13 +93,12 @@ const InquiryForm = ({ isVisible, onClose }) => {
 				setNumber("")
 				setMessage("")
 				setCompany("")
+				toast.success("Form Submitted Successfully", { autoClose: 2000 })
+				onClose() // Close the form popup after successful submission
 			})
-		toast
-			.success("Form Submitted Successfully")
-
 			.catch((error) => {
 				console.error("Error sending email:", error)
-				toast.error("Error fetching data")
+				toast.error("Error sending email", { autoClose: 2000 })
 			})
 	}
 

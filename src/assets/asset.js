@@ -69,7 +69,7 @@ import packaging_v1 from "./videos/package_v1.mp4"
 import packaging_v2 from "./videos/package_v2.mp4"
 import packaging_v3 from "./videos/package_v3.mp4"
 import packaging_v4 from "./videos/package_v4.mp4"
-import packaging_v5 from "./videos/package v5.mov"
+import packaging_v5 from "./videos/package v5.mp4"
 import socialMedia_v1 from "./videos/socialMedia_v1.mp4"
 import socialMedia_v2 from "./videos/socialMedia_v2.mp4"
 import socialMedia_v3 from "./videos/socialMedia_v3.mp4"
@@ -149,6 +149,7 @@ import blogProfile3 from "./blogprofile3.png"
 import blogProfile4 from "./blogprofile4.png"
 import webAiImg from "./webAi img.png"
 import socialMediaGif from "./socialmediagif.gif"
+import blog_bg from "./blogimages.png"
 
 export const assets = {
 	c9logo,
@@ -289,6 +290,7 @@ export const assets = {
 	blogProfile4,
 	webAiImg,
 	socialMediaGif,
+	blog_bg,
 }
 
 export const homeCorosal = [

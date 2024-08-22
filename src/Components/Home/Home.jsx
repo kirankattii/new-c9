@@ -123,7 +123,7 @@ const Home = () => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setIsFormVisible(true)
-		}, 4000) // Show the form after 3 seconds
+		}, 2500) // Show the form after 3 seconds
 
 		return () => clearTimeout(timer) // Cleanup the timer on component unmount
 	}, [])

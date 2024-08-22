@@ -55,19 +55,19 @@ const About = () => {
 								className={activeTab === 0 ? "active" : ""}
 								onClick={() => handleTabClick(0)}
 							>
-								{activeTab === 0 ? "ABOUT US" : ""}
+								{activeTab === 0 ? "ABOUT US" : "ABOUT US"}
 							</p>
 							<p
 								className={activeTab === 1 ? "active" : ""}
 								onClick={() => handleTabClick(1)}
 							>
-								{activeTab === 1 ? "COMMITMENT" : ""}
+								{activeTab === 1 ? "COMMITMENT" : "COMMITMENT"}
 							</p>
 							<p
 								className={activeTab === 2 ? "active" : ""}
 								onClick={() => handleTabClick(2)}
 							>
-								{activeTab === 2 ? "TEAM" : ""}
+								{activeTab === 2 ? "TEAM" : "TEAM"}
 							</p>
 						</div>
 					</div>

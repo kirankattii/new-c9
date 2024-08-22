@@ -32,6 +32,8 @@ import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { useEffect } from "react"
 import SocialMedia2 from "./Components/SocialMedia/SocialMedia2"
+import InfluencerMarketing from "./Components/Blog/InfluencerMarketing/InfluencerMarketing"
+import VideoMarketing from "./Components/Blog/VideoMarketing/VideoMarketing"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -73,7 +75,7 @@ const App = () => {
 		"/values",
 		"/blogs",
 		"/animate",
-		,
+		"/blogs/influencermarketing",
 	]
 
 	const isNotFound = !validPaths.includes(location.pathname)
@@ -154,6 +156,14 @@ const App = () => {
 				<Route
 					path="/blogs"
 					element={<Blog url={url} />}
+				/>
+				<Route
+					path="/blogs/influencermarketing"
+					element={<InfluencerMarketing />}
+				/>
+				<Route
+					path="/blogs/videomarketing"
+					element={<VideoMarketing />}
 				/>
 				<Route
 					path="*"

@@ -271,7 +271,7 @@ const Packaging2 = () => {
 					</div>
 					<div className="package2-subContainer4">
 						<motion.div
-							className="image-container"
+							className="image-container image-container1"
 							style={{ x }}
 						>
 							{packagingImages.map((items, index) => (
@@ -299,7 +299,7 @@ const Packaging2 = () => {
 							))}
 						</motion.div>
 						<motion.div
-							className="image-container"
+							className="image-container image-container3"
 							style={{ x: xxx }}
 						>
 							{packagingImages.map((items, index) => (

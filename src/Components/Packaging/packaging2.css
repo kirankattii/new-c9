@@ -58,7 +58,7 @@
 
 .packaging2-container {
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background: #1e1e1e;
   position: relative;
 
@@ -81,7 +81,7 @@
   display: flex;
   width: 100%;
   color: #fff;
-  margin-bottom: 180px;
+  /* margin-bottom: 180px; */
   flex-direction: column;
   gap: 40px;
 }
@@ -247,7 +247,7 @@
 .package2-subContainer3 div {
   margin: auto;
   width: 45%;
-  margin-top: -200px;
+  /* margin-top: -200px; */
   color: #fff;
   font-family: 'MadeTommyLight';
   display: flex;
@@ -745,6 +745,29 @@
 
 @media(max-width:500px) {
 
+.image-container2 {
+  margin-left: -2000%;
+  /* padding-left: -200%; */
+  align-items: start;
+  justify-content: start;
+}
+.image-container3 {
+  margin-left: -1350px;
+  /* padding-left: -200%; */
+  align-items: start;
+  justify-content: start;
+}
+.image-container1 {
+  margin-left: -800px;
+  /* padding-left: -200%; */
+  align-items: start;
+  justify-content: start;
+}
+.package2-subContainer4 div {
+  display: flex;
+  gap: 0px;
+  position: relative;
+}
 
 
   #myVideo {
@@ -776,7 +799,7 @@
 
   .packaging2-header div {
     color: #fff;
-    margin-top: 100px;
+    /* margin-top: -50px; */
     margin-left: 30px;
 
 
@@ -888,6 +911,9 @@
   .package-bg1 {
     width: 90%;
 
+  }
+  .packaging2-container{
+    margin-top: -30px;
   }
 
 }

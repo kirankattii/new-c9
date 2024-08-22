@@ -127,7 +127,7 @@
   /* padding: 0 50px; */
   align-items: center;
   gap: 50px;
-
+  z-index: 1;
 }
 
 
@@ -143,6 +143,7 @@
   width: 250px;
   padding: 10px;
   padding-left: 65px;
+  z-index: 1;
 }
 
 .service-tags {
@@ -159,6 +160,7 @@
   /* align-items: e; */
   justify-content: end;
   padding: 0 10px;
+  z-index: 1;
 }
 
 .service-tags span {
@@ -2257,6 +2259,16 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+  }
+
+  .whatsets-bg-text3 {
+    top: 50%;
+    left: 10%;
+  }
+
+  .whatsets-bg-text4 {
+    bottom: 55%;
+    right: 0%;
   }
 
 }

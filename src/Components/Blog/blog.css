@@ -58,6 +58,7 @@
   letter-spacing: 1px;
   font-weight: 200;
   margin-bottom: -250px;
+  margin: auto;
 
 }
 
@@ -196,113 +197,12 @@
   cursor: pointer;
 }
 
-#div4 {
-  grid-area: 1 / 5 / 4 / 7;
-  position: relative;
-  /* background-color: rgba(69, 158, 138, 0.5); */
-}
-
-#div4 div {
-
-  /* position: absolute; */
-  z-index: 1;
-  bottom: 30%;
-  padding: 0 15px;
-
-}
-
-#div4 img {
-  width: 100%;
-  height: 85%;
-  border-radius: 48px;
-
-}
-
-#div5 {
-  position: relative;
-  grid-area: 4 / 4 / 7 / 7;
-  /* background-color: rgba(252, 169, 205, 0.5); */
-  /* height: 50%; */
-
-}
-
-#div5 div {
-
-  /* position: absolute; */
-  z-index: 1;
-  bottom: 20%;
-  padding: 0 5px;
-  padding-left: 20px;
-}
-
-#div5 img {
-  width: 100%;
-  height: 70%;
-  border-radius: 40px;
-
-}
-
-#div6 {
-  position: relative;
-  grid-area: 4 / 1 / 7 / 4;
-  /* background-color: rgba(148, 79, 149, 0.5); */
-}
-
-#div6 div {
-
-  /* position: absolute; */
-  z-index: 1;
-  bottom: 20%;
-  padding: 0 5px;
-  padding-left: 20px;
-}
-
-#div6 img {
-  width: 100%;
-  height: 70%;
-  border-radius: 40px;
-
-}
-
-/* #cssportal-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 10px;
-} */
 
 #cssportal-grid div {
   position: relative;
   /* overflow: hidden; */
 }
 
-
-#div5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70%;
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Adjust the opacity to make it lighter or darker */
-  z-index: 1;
-  border-radius: 37px;
-
-}
-
-#div6::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70%;
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Adjust the opacity to make it lighter or darker */
-  z-index: 1;
-  border-radius: 37px;
-
-}
 
 #div1::before {
   content: "";
@@ -331,17 +231,6 @@
 
 }
 
-#div4 h3 {
-  padding: 10px;
-  font-weight: 400;
-  background: #EF4523;
-  margin-bottom: 10px;
-  margin-left: 1px;
-  border-radius: 18px 0 0 18px;
-  padding-left: 50px;
-  margin-right: -50px;
-
-}
 
 #cssportal-grid div:hover::before {
   background-color: transparent;

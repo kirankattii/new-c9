@@ -3,10 +3,12 @@ import "./blog.css"
 import { assets } from "../../assets/asset"
 import axios from "axios"
 import { Helmet } from "react-helmet"
+import { useNavigate } from "react-router-dom"
 
 const Blog = ({ url }) => {
 	const [list, setList] = useState([])
 	const [loading, setLoading] = useState(true)
+	const navigate = useNavigate()
 
 	const fetchList = async () => {
 		setLoading(true) // Set loading to true before fetching data
@@ -48,107 +50,57 @@ const Blog = ({ url }) => {
 							<h3>Expert Insights into Marketing Trends</h3>
 						</div>
 					</div>
-					{loading ? (
-						<div className="spinner">
-							<div className="spin"></div>
-						</div>
-					) : (
-						<div className="blog-content">
-							<div className="left-blog-content">
-								<div className="leftTop-blog-content">
-									<img
-										src={list[0].image}
-										alt="Blogging"
-									/>
-									<div className="blog-left-innerContent">
-										<span>{list[0]?.title || "No Title Available"}</span>
-										<p>{list[0]?.description || "No Description Available"}</p>
-									</div>
-								</div>
-								<div>
-									<h2 className="Top-Wordsmiths">Top Wordsmiths</h2>
-									<main>
-										<ul class="example-1">
-											<li class="icon-content">
-												<a
-													class="link"
-													data-social="spotify"
-													aria-label="Spotify"
-													// href="https://www.spotify.com/"
-												>
-													<img
-														src={assets.blogProfile1}
-														alt="Blog"
-													/>
-												</a>
-												{/* <div class="tooltip1">Smith</div> */}
-											</li>
-											<li class="icon-content">
-												<a
-													class="link"
-													data-social="pinterest"
-													aria-label="Pinterest"
-													// href="https://www.pinterest.com/"
-												>
-													<img
-														src={assets.blogProfile2}
-														alt=""
-													/>
-												</a>
-												{/* <div class="tooltip1">Smith</div> */}
-											</li>
-											<li class="icon-content">
-												<a
-													class="link"
-													data-social="dribbble"
-													aria-label="Dribbble"
-													// href="https://dribbble.com/"
-												>
-													<img
-														src={assets.blogProfile3}
-														alt="Blog Image"
-													/>
-												</a>
-												{/* <div class="tooltip1">Smith</div> */}
-											</li>
-											<li class="icon-content">
-												<a
-													class="link"
-													data-social="telegram"
-													aria-label="Telegram"
-													// href="https://telegram.org/"
-												>
-													<img
-														src={assets.blogProfile4}
-														alt=""
-													/>
-												</a>
-												{/* <div class="tooltip1">Smith</div> */}
-											</li>
-										</ul>
-									</main>
+
+					<div className="blog-content">
+						<div className="left-blog-content">
+							<div className="leftTop-blog-content">
+								<img
+									src={assets.grid}
+									alt="Blogging"
+								/>
+								<div
+									className="blog-left-innerContent"
+									style={{ cursor: "pointer" }}
+									onClick={() => navigate("/blogs/influencermarketing")}
+								>
+									<span>
+										Influencer Marketing: Authentic Connections, Real Results
+									</span>
+									<p>
+										Discover the power of influencer partnerships in building
+										genuine brand connections. Learn to choose the right
+										influencers, collaborate authentically, measure ROI, and
+										maintain ethical practices for long-term success
+									</p>
 								</div>
 							</div>
-							<div className="right-blog-content">
-								<div id="cssportal-grid">
-									<div id="div1">
-										<img
-											src={assets.arrow45}
-											alt="arrow Img"
-											className="arrow45"
-										/>
-										<img
-											src={list[1].image}
-											alt="Blog"
-										/>
-										<div>
-											<span>{list[1]?.title || "No Title Available"}</span>
-											<p>
-												{list[1]?.description || "No Description Available"}
-											</p>
-										</div>
+						</div>
+						<div className="right-blog-content">
+							<div id="cssportal-grid">
+								<div id="div1">
+									<img
+										src={assets.arrow45}
+										alt="arrow Img"
+										className="arrow45"
+									/>
+									<img
+										src={assets.grid1}
+										alt="Blog"
+									/>
+									<div
+										onClick={() => navigate("/blogs/videomarketing")}
+										style={{ cursor: "pointer" }}
+									>
+										<span>Video Marketing Mastery</span>
+										<p>
+											Discover how video marketing drives engagement and
+											conversions. Learn about different video types,
+											storytelling techniques, and platform optimizations to
+											maximize your marketing impact
+										</p>
 									</div>
-									<div id="div4">
+								</div>
+								{/* <div id="div4">
 										<h3>READ BLOG</h3>
 										<img
 											src={list[2].image}
@@ -184,11 +136,10 @@ const Blog = ({ url }) => {
 												{list[3]?.description || "No Description Available"}
 											</p>
 										</div>
-									</div>
-								</div>
+									</div> */}
 							</div>
 						</div>
-					)}
+					</div>
 				</div>
 			</div>
 		</>
