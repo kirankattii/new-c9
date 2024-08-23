@@ -27,7 +27,7 @@
 }
 
 .scrollsectioninner {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 400vw;
   display: flex;
   flex-direction: row;
@@ -214,5 +214,11 @@
   justify-content: center;
   align-items: center;
 }
-
+  .scrollsectioninner {
+    height: 100vh;
+    width: 500vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
 }
