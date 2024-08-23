@@ -27,7 +27,7 @@
 }
 
 .scrollsectioninner {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   width: 400vw;
   display: flex;
   flex-direction: row;
@@ -119,6 +119,9 @@
   width: 400px;
   margin-top: 25px;
 }
+.horizontalmotion2{
+  display: none;
+}
 
 @media(max-width:850px) {
   .scrollsection {
@@ -199,26 +202,39 @@
     text-align: justify;
   }
   .horizontalmotion{
-    /* display: none; */
+    display: none;
   }
-  .horizontalmotion {
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.scrollsection {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  .scrollsectioninner {
-    height: 100vh;
-    width: 500vw;
+  .horizontalmotion2{
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+  }
+  .horizontalmotion2 video{
+    width: 85%;
+    margin: auto;
+    display: flex;align-items: center;
+  }
+  .marketingGif2{
+    width: 95%;
+    margin: auto;
+    display: flex;align-items: center;justify-content: center;
+  }
+  .newScroll2,.newScroll3,.newScroll4{
+    display: flex;align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;text-align: center;
+  }
+  .newScroll5{
+width: 92%;
+display: flex;flex-direction: column;
+gap: 20px;
+margin: 40px 0;
+  }
+  .newScroll5 div{
+    display: flex;flex-direction: column;
+    gap: 5px;
   }
 }
