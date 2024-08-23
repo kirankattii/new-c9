@@ -106,14 +106,14 @@ const Navbar = () => {
 							<div className="media-dropdown">
 								<Link
 									onClick={() => setMobileMenu(false)}
-									to="/logo"
+									to="/social-media-marketing"
 								>
 									Social Media Marketing
 								</Link>
 								<hr />
 								<Link
 									onClick={() => setMobileMenu(false)}
-									to="/packaging2"
+									to="/web-development"
 								>
 									Web Development
 									<hr />
@@ -128,7 +128,7 @@ const Navbar = () => {
 
 								<Link
 									onClick={() => setMobileMenu(false)}
-									to="/web-development"
+									to="/logo"
 								>
 									Logo Designing
 								</Link>
@@ -136,7 +136,7 @@ const Navbar = () => {
 
 								<Link
 									onClick={() => setMobileMenu(false)}
-									to="/social-media-marketing"
+									to="/packaging2"
 								>
 									Packaging Designing
 								</Link>

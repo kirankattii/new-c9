@@ -162,6 +162,12 @@
 }
 
 @media(max-width:500px) {
+  .header {
+  margin-top: 84px;
+  min-height: 80vh;
+
+}
+
   .digitalMarketing {
     display: flex;
     flex-direction: column;
