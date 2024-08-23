@@ -198,4 +198,21 @@
     padding: 20px;
     text-align: justify;
   }
+  .horizontalmotion{
+    /* display: none; */
+  }
+  .horizontalmotion {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.scrollsection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 }

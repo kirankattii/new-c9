@@ -79,30 +79,56 @@ const SocialMedia2 = () => {
 		target: container,
 		offset: ["start end", "end start"],
 	})
+
+	const horizontalMotionRef = useRef(null)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const scrollTop = window.scrollY
+			const offsetTop = horizontalMotionRef.current.offsetTop
+			const windowHeight = window.innerHeight
+			const scrollStart = offsetTop - windowHeight
+
+			if (
+				scrollTop > scrollStart &&
+				scrollTop < offsetTop + horizontalMotionRef.current.offsetHeight
+			) {
+				const distance = scrollTop - scrollStart
+				horizontalMotionRef.current.style.transform = `translateX(-${distance}px)`
+			}
+		}
+
+		window.addEventListener("scroll", handleScroll)
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll)
+		}
+	}, [])
 	return (
 		<div className={styles.Allcontainer}>
 			<div className={styles.horizontalmotion}>
-				<div className={styles.header}>
-					<img
-						src={assets.socialMedia_img}
-						alt=""
-					/>
-					<p>
-						In today's digital age, where consumer choices are shaped by online
-						interactions, effective digital marketing is essential. At C9 Ads,
-						we understand that success requires more than just an online
-						presence—it demands a proactive strategy to capitalize on digital
-						opportunities. A strong online presence is now a business necessity,
-						as every digital touchpoint, from your website to social media, is
-						crucial for growth. As a leading digital marketing agency in Perth,
-						we offer comprehensive services starting with a thorough analysis of
-						your online presence, followed by customized strategies to enhance
-						visibility and amplify your brand. Our focus on genuine engagement
-						and strategic promotions ensures your brand stands out, highlighting
-						your unique selling points to resonate in a crowded marketplace.
-					</p>
-				</div>
 				<section className={styles.scrollsectionouter}>
+					<div className={styles.header}>
+						<img
+							src={assets.socialMedia_img}
+							alt=""
+						/>
+						<p>
+							In today's digital age, where consumer choices are shaped by
+							online interactions, effective digital marketing is essential. At
+							C9 Ads, we understand that success requires more than just an
+							online presence—it demands a proactive strategy to capitalize on
+							digital opportunities. A strong online presence is now a business
+							necessity, as every digital touchpoint, from your website to
+							social media, is crucial for growth. As a leading digital
+							marketing agency in Perth, we offer comprehensive services
+							starting with a thorough analysis of your online presence,
+							followed by customized strategies to enhance visibility and
+							amplify your brand. Our focus on genuine engagement and strategic
+							promotions ensures your brand stands out, highlighting your unique
+							selling points to resonate in a crowded marketplace.
+						</p>
+					</div>
 					<div ref={triggerRef}>
 						<div
 							ref={sectionRef}
@@ -238,36 +264,36 @@ const SocialMedia2 = () => {
 							</div> */}
 						</div>
 					</div>
-				</section>
-				<div>
-					{" "}
-					<div className="socialMedia-connect">
-						<div>
-							<h1>Connect With C9 Ads Today</h1>
-							<p>
-								Ready to transform your digital marketing strategy and see
-								tangible results? Connect with C9 Ads today.  Let’s discuss how
-								we can elevate your online presence and turn digital channels
-								into pathways of growth for your business.
-							</p>
+					<div>
+						{" "}
+						<div className="socialMedia-connect">
+							<div>
+								<h1>Connect With C9 Ads Today</h1>
+								<p>
+									Ready to transform your digital marketing strategy and see
+									tangible results? Connect with C9 Ads today.  Let’s discuss
+									how we can elevate your online presence and turn digital
+									channels into pathways of growth for your business.
+								</p>
+							</div>
+							<form>
+								<label htmlFor="">Company Name</label>
+								<input type="text" />
+								<label htmlFor="">Email</label>
+								<input type="text" />
+								<label htmlFor="">Phone</label>
+								<input type="text" />
+								<label htmlFor="">Message</label>
+								<textarea
+									name=""
+									id=""
+									rows={4}
+								/>
+								<button>Send Message</button>
+							</form>
 						</div>
-						<form>
-							<label htmlFor="">Company Name</label>
-							<input type="text" />
-							<label htmlFor="">Email</label>
-							<input type="text" />
-							<label htmlFor="">Phone</label>
-							<input type="text" />
-							<label htmlFor="">Message</label>
-							<textarea
-								name=""
-								id=""
-								rows={4}
-							/>
-							<button>Send Message</button>
-						</form>
 					</div>
-				</div>
+				</section>
 			</div>
 		</div>
 	)
