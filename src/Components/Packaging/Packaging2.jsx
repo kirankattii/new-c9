@@ -169,6 +169,23 @@ const Packaging2 = () => {
 							muted
 							loop
 							// controls
+							className="packaging_v5"
+						>
+							<source
+								src={assets.packaging_v5}
+								type="video/mp4"
+							/>
+						</motion.video>
+						<motion.video
+							whileInView={{ scale: 1, opacity: 1 }}
+							initial={{ scale: 0.3, opacity: 0 }}
+							transition={{ duration: 0.6 }}
+							id="myVideo4"
+							autoPlay
+							muted
+							loop
+							// controls
+							className="packaging_v52"
 						>
 							<source
 								src={assets.packaging_v5}

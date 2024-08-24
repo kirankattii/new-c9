@@ -335,6 +335,12 @@
   display: none;
 
 }
+  .packaging_v5{
+    display: block;
+  }
+    .packaging_v52{
+    display: none;
+  }
 
 @media(max-width:1300px) {
   .packaging2-header div {
@@ -913,7 +919,15 @@
 
   }
   .packaging2-container{
-    margin-top: -30px;
+    margin-top: -45px;
+  }
+  .packaging_v5{
+    display: none;
+  }
+    .packaging_v52{
+    display: block;
+    width: 90%;
+    height: 90%;
   }
 
 }
