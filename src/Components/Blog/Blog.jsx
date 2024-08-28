@@ -53,7 +53,11 @@ const Blog = ({ url }) => {
 
 					<div className="blog-content">
 						<div className="left-blog-content">
-							<div className="leftTop-blog-content">
+							<div
+								className="leftTop-blog-content"
+								onClick={() => navigate("/blogs/influencermarketing")}
+								style={{ cursor: "pointer" }}
+							>
 								<img
 									src={assets.grid}
 									alt="Blogging"
@@ -61,7 +65,6 @@ const Blog = ({ url }) => {
 								<div
 									className="blog-left-innerContent"
 									style={{ cursor: "pointer" }}
-									onClick={() => navigate("/blogs/influencermarketing")}
 								>
 									<span>
 										Influencer Marketing: Authentic Connections, Real Results
@@ -75,7 +78,11 @@ const Blog = ({ url }) => {
 								</div>
 							</div>
 						</div>
-						<div className="right-blog-content">
+						<div
+							className="right-blog-content"
+							onClick={() => navigate("/blogs/videomarketing")}
+							style={{ cursor: "pointer" }}
+						>
 							<div id="cssportal-grid">
 								<div id="div1">
 									<img
@@ -87,10 +94,7 @@ const Blog = ({ url }) => {
 										src={assets.grid1}
 										alt="Blog"
 									/>
-									<div
-										onClick={() => navigate("/blogs/videomarketing")}
-										style={{ cursor: "pointer" }}
-									>
+									<div style={{ cursor: "pointer" }}>
 										<span>Video Marketing Mastery</span>
 										<p>
 											Discover how video marketing drives engagement and
