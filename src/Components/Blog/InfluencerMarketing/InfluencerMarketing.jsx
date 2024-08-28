@@ -130,7 +130,9 @@ const InfluencerMarketing = () => {
 					</div>
 				</div>
 			</div>
-			<button className={styles.contactButton}>Contact</button>
+			<button className={styles.contactButton}>
+				<Link to={"/contact"}>Contact</Link>
+			</button>
 		</div>
 	)
 }

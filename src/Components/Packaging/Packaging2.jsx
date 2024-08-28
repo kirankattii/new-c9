@@ -24,12 +24,11 @@ const Packaging2 = () => {
 		<>
 			<Helmet>
 				<title>
-					Product Packaging Designing Company Australia | Packaging Designing
-					Company Australia
+					Eye-Catching Product Packaging Design | Best Creative agency in Perth
 				</title>
 				<meta
 					name="description"
-					content="Offers the best and latest product packaging design which is creative and innovative."
+					content="Transform your products into attention-grabbing must-haves with our expert packaging design services. Our team of designers will create unique and effective packaging that will make your brand stand out on the shelves. Request a quote now!"
 				/>
 			</Helmet>
 			<div className="packaging2">

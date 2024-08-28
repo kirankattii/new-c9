@@ -22,12 +22,11 @@ const Seo = () => {
 		<>
 			<Helmet>
 				<title>
-					Best Search Engine Optimization Company Australia | Best SEO Company
-					Australia
+					Get expert SEO service for your Website | Rank your business higher
 				</title>
 				<meta
 					name="description"
-					content="We are the best search engine optimization company in Australia and helps to rank your website with organic traffic."
+					content="Improve your website's search engine rankings and attract more traffic with our proven SEO strategies. Our experienced team will optimize your online presence to help you reach your target audience and increase your online visibility. Contact us today to start seeing results."
 				/>
 			</Helmet>
 			<div className="seo">

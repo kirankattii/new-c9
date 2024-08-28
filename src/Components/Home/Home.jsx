@@ -136,11 +136,12 @@ const Home = () => {
 		<>
 			<Helmet>
 				<title>
-					Digital Marketing Company Australia | Digital Marketing Company Perth
+					Full Service Digital Marketing Agency | Boost Your Online Presence
+					Today!
 				</title>
 				<meta
 					name="description"
-					content="The most trusted digital marketing agency in Australia and offers logo designing, SEO, SMO, SMM, web designing, web development, and product packaging services."
+					content="The most trusted digital marketing agency in WA. Take your business to the next level with our comprehensive digital marketing services. Contact us today to see how we can elevate your online presence!"
 				/>
 			</Helmet>
 			<div className="homePageContainer">

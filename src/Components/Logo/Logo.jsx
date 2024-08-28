@@ -11,11 +11,11 @@ const Logo = () => {
 		<>
 			<Helmet>
 				<title>
-					Best Logo Designing Company Australia | Logo designing company Perth
+					Stand Out with a Unique Logo for your company | Branding Solutions
 				</title>
 				<meta
 					name="description"
-					content="Expert Team for creating the best logo designs offering unique and creative logos for your business."
+					content="Get high-quality, unique logo designs without worrying about copyright issues. Our team of experts specializes in creating custom logos that will represent your brand effectively. Trust our professional logo designing services for creative and legally safe solutions."
 				/>
 			</Helmet>
 			<div className="logo2">

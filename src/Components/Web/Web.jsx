@@ -81,11 +81,12 @@ const Web = () => {
 		<>
 			<Helmet>
 				<title>
-					Web Development Company Australia | Web Designing Company Perth
+					Professional Web Design and Development Services | Get a Free Quote
+					Now
 				</title>
 				<meta
 					name="description"
-					content="We are a creative web development company in Australia and handle your website with genuine content free from AI-generated content."
+					content="Top-notch web design and development services to enhance your online presence. Contact us now for a free quote and take your digital presence to the next level."
 				/>
 			</Helmet>
 			<div className="web">

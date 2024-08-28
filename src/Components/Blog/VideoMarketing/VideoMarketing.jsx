@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { assets } from "../../../assets/asset"
 import styles from "./VideoMarketing.module.css"
 
@@ -127,7 +128,9 @@ const VideoMarketing = () => {
 					</p>
 				</div>
 			</div>
-			<button className={styles.contactButton}>Contact</button>
+			<button className={styles.contactButton}>
+				<Link to={"/contact"}>Contact</Link>
+			</button>
 		</div>
 	)
 }
