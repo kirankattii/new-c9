@@ -51,7 +51,7 @@ const Blog = ({ url }) => {
 						</div>
 					</div>
 
-					<div className="blog-content">
+					{/* <div className="blog-content">
 						<div className="left-blog-content">
 							<div
 								className="leftTop-blog-content"
@@ -59,7 +59,7 @@ const Blog = ({ url }) => {
 								style={{ cursor: "pointer" }}
 							>
 								<img
-									src={assets.grid}
+									src={assets.blog_bg}
 									alt="Blogging"
 								/>
 								<div
@@ -67,14 +67,9 @@ const Blog = ({ url }) => {
 									style={{ cursor: "pointer" }}
 								>
 									<span>
-										Influencer Marketing: Authentic Connections, Real Results
+										The Importance of First Impressions: How Effective Packaging
+										Design Can Boost Sales
 									</span>
-									<p>
-										Discover the power of influencer partnerships in building
-										genuine brand connections. Learn to choose the right
-										influencers, collaborate authentically, measure ROI, and
-										maintain ethical practices for long-term success
-									</p>
 								</div>
 							</div>
 						</div>
@@ -91,57 +86,44 @@ const Blog = ({ url }) => {
 										className="arrow45"
 									/>
 									<img
-										src={assets.grid1}
+										src={assets.blog_bg3}
 										alt="Blog"
 									/>
 									<div style={{ cursor: "pointer" }}>
-										<span>Video Marketing Mastery</span>
-										<p>
-											Discover how video marketing drives engagement and
-											conversions. Learn about different video types,
-											storytelling techniques, and platform optimizations to
-											maximize your marketing impact
-										</p>
+										<span>
+											The Power of Social Media Marketing: Why Your Business
+											Needs It
+										</span>
 									</div>
 								</div>
-								{/* <div id="div4">
-										<h3>READ BLOG</h3>
-										<img
-											src={list[2].image}
-											alt="AI in Marketing"
-										/>
-										<div>
-											<span>{list[2]?.title || "No Title Available"}</span>
-											<p>
-												{list[2]?.description || "No Description Available"}
-											</p>
-										</div>
-									</div>
-									<div id="div5">
-										<img
-											src={list[3].image}
-											alt="Journey Mapping"
-										/>
-										<div>
-											<span>{list[4]?.title || "No Title Available"}</span>
-											<p>
-												{list[4]?.description || "No Description Available"}
-											</p>
-										</div>
-									</div>
-									<div id="div6">
-										<img
-											src={list[4].image}
-											alt="Brand Building Image"
-										/>
-										<div>
-											<span>{list[3]?.title || "No Title Available"}</span>
-											<p>
-												{list[3]?.description || "No Description Available"}
-											</p>
-										</div>
-									</div> */}
 							</div>
+						</div>
+					</div> */}
+					<div className="blog-content2">
+						<div
+							className="blog21"
+							onClick={() => navigate("/blogs/influencermarketing")}
+						>
+							<img
+								src={assets.blog_bg}
+								alt=""
+							/>
+							<h2>
+								The Importance of First Impressions: How Effective Packaging
+								Design Can Boost Sales
+							</h2>
+						</div>
+						<div
+							className="blog22"
+							onClick={() => navigate("/blogs/videomarketing")}
+						>
+							<img
+								src={assets.blog_bg3}
+								alt=""
+							/>
+							<h2>
+								The Power of Social Media Marketing: Why Your Business Needs It
+							</h2>
 						</div>
 					</div>
 				</div>

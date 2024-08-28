@@ -7,7 +7,7 @@ const VideoMarketing = () => {
 		<div className={styles.container}>
 			<div className={styles.header}>
 				<img
-					src={assets.blog_bg}
+					src={assets.blog_bg3}
 					alt="blog"
 				/>
 			</div>
