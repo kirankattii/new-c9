@@ -76,6 +76,7 @@ const App = () => {
 		"/blogs",
 		"/animate",
 		"/blogs/influencermarketing",
+		"/blogs/videomarketing",
 	]
 
 	const isNotFound = !validPaths.includes(location.pathname)

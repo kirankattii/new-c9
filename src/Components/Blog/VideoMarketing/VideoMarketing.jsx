@@ -128,9 +128,9 @@ const VideoMarketing = () => {
 					</p>
 				</div>
 			</div>
-			<button className={styles.contactButton}>
-				<Link to={"/contact"}>Contact</Link>
-			</button>
+			<Link to={"/contact"}>
+				<button className={styles.contactButton}>Contact</button>
+			</Link>
 		</div>
 	)
 }
