@@ -112,18 +112,37 @@ const Blog = ({ url }) => {
 								The Importance of First Impressions: How Effective Packaging
 								Design Can Boost Sales
 							</h2>
+							<span>READ MORE</span>
 						</div>
-						<div
-							className="blog22"
-							onClick={() => navigate("/blogs/videomarketing")}
-						>
-							<img
-								src={assets.blog_bg3}
-								alt=""
-							/>
-							<h2>
-								The Power of Social Media Marketing: Why Your Business Needs It
-							</h2>
+						<div className="blog222">
+							<div
+								className="blog22"
+								onClick={() => navigate("/blogs/videomarketing")}
+							>
+								<img
+									src={assets.blog_bg3}
+									alt=""
+								/>
+								<h2>
+									The Power of Social Media Marketing: Why Your Business Needs
+									It
+								</h2>
+								<span>READ MORE</span>
+							</div>
+							<div
+								className="blog22"
+								onClick={() => navigate("/blogs/blog-website")}
+							>
+								<img
+									src={assets.websiteBlog}
+									alt=""
+								/>
+								<h2 className="website-title">
+									The Power of Social Media Marketing: Why Your Business Needs
+									It
+								</h2>
+								<span>READ MORE</span>
+							</div>
 						</div>
 					</div>
 				</div>

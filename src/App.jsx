@@ -34,6 +34,7 @@ import { useEffect } from "react"
 import SocialMedia2 from "./Components/SocialMedia/SocialMedia2"
 import InfluencerMarketing from "./Components/Blog/InfluencerMarketing/InfluencerMarketing"
 import VideoMarketing from "./Components/Blog/VideoMarketing/VideoMarketing"
+import WebsiteBlog from "./Components/Blog/WebsiteBlog/WebsiteBlog"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -165,6 +166,10 @@ const App = () => {
 				<Route
 					path="/blogs/videomarketing"
 					element={<VideoMarketing />}
+				/>
+				<Route
+					path="/blogs/blog-website"
+					element={<WebsiteBlog />}
 				/>
 				<Route
 					path="*"

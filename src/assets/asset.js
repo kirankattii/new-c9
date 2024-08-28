@@ -151,6 +151,7 @@ import webAiImg from "./webAi img.png"
 import socialMediaGif from "./socialmediagif.gif"
 import blog_bg from "./blogimages.png"
 import blog_bg3 from "./blogImg3.png"
+import websiteBlog from "./websiteBlog.png"
 
 export const assets = {
 	c9logo,
@@ -293,6 +294,7 @@ export const assets = {
 	socialMediaGif,
 	blog_bg,
 	blog_bg3,
+	websiteBlog,
 }
 
 export const homeCorosal = [
