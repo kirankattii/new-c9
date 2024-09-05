@@ -4,6 +4,7 @@ import gsap from "gsap"
 import ScrollTrigger from "gsap/dist/ScrollTrigger"
 import { useEffect, useRef } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
+import { Helmet } from "react-helmet"
 
 const SocialMedia2 = () => {
 	const sectionRef = useRef(null)
