@@ -138,8 +138,8 @@ const Blog = ({ url }) => {
 									alt=""
 								/>
 								<h2 className="website-title">
-									The Power of Social Media Marketing: Why Your Business Needs
-									It
+									How a Dynamic Website Can Transform Your Brand Image
+
 								</h2>
 								<span>READ MORE</span>
 							</div>
