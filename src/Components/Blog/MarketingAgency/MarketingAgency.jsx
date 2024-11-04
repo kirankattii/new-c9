@@ -7,7 +7,7 @@ const MarketingAgency = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <img
-          src={assets.blog_bg}
+          src={assets.marketingAgency}
           alt="blog"
         />
       </div>

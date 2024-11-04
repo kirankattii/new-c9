@@ -152,6 +152,7 @@ import socialMediaGif from "./socialmediagif.gif"
 import blog_bg from "./blogimages.png"
 import blog_bg3 from "./blogImg3.png"
 import websiteBlog from "./websiteBlog.png"
+import marketingAgency from './marketingAgency.webp'
 
 export const assets = {
 	c9logo,
@@ -295,6 +296,7 @@ export const assets = {
 	blog_bg,
 	blog_bg3,
 	websiteBlog,
+	marketingAgency
 }
 
 export const homeCorosal = [

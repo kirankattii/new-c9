@@ -120,7 +120,7 @@ const Blog = ({ url }) => {
 								onClick={() => navigate("/blogs/digital-marketing-agency")}
 							>
 								<img
-									src={assets.blog_bg}
+									src={assets.marketingAgency}
 									alt=""
 								/>
 								<h2>
