@@ -1,0 +1,181 @@
+.container {
+  background: #1e1e1e;
+  color: #fff;
+  font-family: 'AllerDisplay';
+
+  font-family: 'MadeTommyLight';
+
+  padding-bottom: 80px;
+}
+
+.bgImage img {
+  width: 100%;
+}
+
+.allContent {
+  padding: 46px 0;
+  width: 92%;
+  margin: auto;
+}
+
+.allContent p {
+  font-size: 22px;
+  letter-spacing: 0.5px;
+  margin-top: 34px;
+  font-weight: 300;
+}
+
+
+.topContent h1 {
+  font-family: 'AllerDisplay';
+
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 1.5px;
+  line-height: 1.05;
+}
+
+.topContent p {
+  margin-top: 20px;
+
+  letter-spacing: 0.5px;
+}
+
+.header img {
+  width: 100%;
+}
+
+.contentList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.contentList div {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.contentList div h2 {
+  color: #EF4523;
+  font-size: 1.3rem;
+}
+
+.contentList div p {
+  margin-top: 5px;
+  font-size: 1.3rem;
+}
+
+
+.conclusion h2 {
+  margin-top: 40px;
+  font-size: 40px;
+  font-family: 'AllerDisplay';
+  letter-spacing: 1.3px;
+  font-weight: 300;
+}
+
+.contactButton {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px 40px;
+  width: 100%;
+  border-radius: 10px;
+  background: #EF4523;
+  color: #fff;
+  font-size: 32px;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+
+}
+
+
+
+@media(max-width:700px) {
+  .bgImage img {
+    width: 100%;
+    margin-top: 12vh;
+
+  }
+}
+
+@media(max-width:600px) {
+  .allContent {
+    padding: 30px 0;
+    width: 94%;
+    margin: auto;
+  }
+
+  .topContent h1 {
+    font-family: 'AllerDisplay';
+
+    font-weight: 300;
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 1.05;
+  }
+
+  .allContent p {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+    font-weight: 300;
+  }
+
+  .powerOfImpression h2 {
+    font-size: 30px;
+    font-family: 'AllerDisplay';
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  .designMatters h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 34px;
+    font-family: 'AllerDisplay';
+    font-weight: 300;
+    letter-spacing: 1.2px;
+  }
+
+  .subContainer {
+    width: 96%;
+
+  }
+
+  .designMatters p {
+    text-align: start;
+  }
+
+  .c9Help h2 {
+    margin-top: 40px;
+    font-family: 'AllerDisplay';
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+
+  .contactButton {
+    width: 70%;
+    padding: 5px;
+    font-size: 28px;
+  }
+
+  .contentList div h2 {
+    color: #EF4523;
+    font-size: 1.15rem;
+  }
+
+  .contentList div p {
+    margin-top: 5px;
+    font-size: 1.1rem;
+  }
+
+}

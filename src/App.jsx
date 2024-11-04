@@ -35,6 +35,7 @@ import SocialMedia2 from "./Components/SocialMedia/SocialMedia2"
 import InfluencerMarketing from "./Components/Blog/InfluencerMarketing/InfluencerMarketing"
 import VideoMarketing from "./Components/Blog/VideoMarketing/VideoMarketing"
 import WebsiteBlog from "./Components/Blog/WebsiteBlog/WebsiteBlog"
+import MarketingAgency from "./Components/Blog/MarketingAgency/MarketingAgency"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -171,6 +172,8 @@ const App = () => {
 				<Route
 					path="/blogs/blog-website"
 					element={<WebsiteBlog />}
+				/>
+				<Route path="/blogs/digital-marketing-agency" element={<MarketingAgency />}
 				/>
 				<Route
 					path="*"

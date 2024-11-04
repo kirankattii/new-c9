@@ -100,19 +100,34 @@ const Blog = ({ url }) => {
 						</div>
 					</div> */}
 					<div className="blog-content2">
-						<div
-							className="blog21"
-							onClick={() => navigate("/blogs/influencermarketing")}
-						>
-							<img
-								src={assets.blog_bg}
-								alt=""
-							/>
-							<h2>
-								The Importance of First Impressions: How Effective Packaging
-								Design Can Boost Sales
-							</h2>
-							<span>READ MORE</span>
+						<div className="blogContent2020">
+							<div
+								className="blog21"
+								onClick={() => navigate("/blogs/influencermarketing")}
+							>
+								<img
+									src={assets.blog_bg}
+									alt=""
+								/>
+								<h2>
+									The Importance of First Impressions: How Effective Packaging
+									Design Can Boost Sales
+								</h2>
+								<span>READ MORE</span>
+							</div>
+							<div
+								className="blog21"
+								onClick={() => navigate("/blogs/digital-marketing-agency")}
+							>
+								<img
+									src={assets.blog_bg}
+									alt=""
+								/>
+								<h2>
+									How a Digital Marketing Agency Can Boost Your Social Media Presence
+								</h2>
+								<span>READ MORE</span>
+							</div>
 						</div>
 						<div className="blog222">
 							<div
